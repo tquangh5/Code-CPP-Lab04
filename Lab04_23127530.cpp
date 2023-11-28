@@ -15,6 +15,14 @@ void setArray(ll a[],ll &n){
     }
     cout<<endl;
 }
+ll isPrime(ll n ){
+    for(ll i = 2  ; i < n ; i ++){
+        if(n%i==0){
+            return 0;
+        }
+    }
+    return n>1;
+}
 
 //Xuat ra mang n phan tu 
 void printArray(ll a[], ll n ){
